@@ -1,0 +1,28 @@
+{
+  "name": "search_wikipedia",
+  "version": "1.0.0",
+  "description": "A command line application that consumes the mediawiki api and returns results based on the argument (searchTerm) provided",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js `searchTerm`"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/incometrader/search-wikipedia-api.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "api",
+    "wiki"
+  ],
+  "author": "Ignatius Ukwuoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incometrader/search-wikipedia-api/issues"
+  },
+  "homepage": "https://github.com/incometrader/search-wikipedia-api#readme",
+  "dependencies": {
+    "xhr2": "^0.1.4"
+  }
+}
