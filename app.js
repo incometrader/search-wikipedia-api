@@ -10,15 +10,15 @@ xhr.onreadystatechange = function() {
     var data = JSON.parse(xhr.responseText);
 
     var title   = data[1],
-    	intro   = data[2],
-    	link    = data[3],
-    	results = {};
+    	  intro   = data[2],
+    	  link    = data[3],
+    	  results = {};
 
-    for (var i = 0; i < title.length; i++){
+    for (var i = 0; i < title.length; i++) {
       results[i + 1] = {"Title": title[i], "Intro": intro[i], "Link": link[i]}; 	
     }
     
-    if (Object.keys(results).length === 0){
+    if (Object.keys(results).length === 0) {
       console.log("No results found for your search. Try searching a different word.")
     } else {
       console.log(results);
